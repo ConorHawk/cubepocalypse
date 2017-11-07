@@ -536,7 +536,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2c6f5ab601d22834883d3c7e18f8be41, type: 2}
+  - {fileID: 2100000, guid: 94004f1c5ea9b479899200eb20f0ce66, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -944,12 +944,12 @@ Prefab:
     - target: {fileID: 224469430892350330, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 290.5
+      value: 251.5
       objectReference: {fileID: 0}
     - target: {fileID: 224469430892350330, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 274
+      value: 212.5
       objectReference: {fileID: 0}
     - target: {fileID: 224469430892350330, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
@@ -1044,7 +1044,7 @@ Prefab:
     - target: {fileID: 224950289457411226, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -15.400002
+      value: -23.100002
       objectReference: {fileID: 0}
     - target: {fileID: 224819705206459148, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
@@ -1054,7 +1054,12 @@ Prefab:
     - target: {fileID: 224950289457411226, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -7.700001
+      value: -15.400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852173825189896, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4, type: 2}
