@@ -463,8 +463,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 54332572243583864}
+  player: {fileID: 4805082060092092}
   forwardForce: 7500
-  sidewaysForce: 120
+  sidewaysForce: 80
   jumpHeight: 2
   jumpThreshold: 1
   jumpSound: {fileID: 82522332730754266}

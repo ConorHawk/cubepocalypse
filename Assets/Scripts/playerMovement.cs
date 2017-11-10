@@ -3,7 +3,7 @@
 public class playerMovement : MonoBehaviour {
 
 	public Rigidbody rb;
-
+    public Transform player;
     public float forwardForce = 1000f;
     public float sidewaysForce = 500f;
     public float jumpHeight = 2f;
@@ -21,6 +21,18 @@ public class playerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		rb.AddForce(0,0,forwardForce * Time.deltaTime);
+
+        // The squash move
+        if (Input.GetKey("s"))
+        {
+            if (player.transform.localScale.y > 0.1){
+                player.transform.localScale -= new Vector3(0, 0.1f, 0);
+            }
+        } else {
+            if (player.transform.localScale.y < 1){
+                player.transform.localScale += new Vector3(0, 0.1f, 0);
+            }
+        }
 
         if (Input.GetKey("d"))
         {

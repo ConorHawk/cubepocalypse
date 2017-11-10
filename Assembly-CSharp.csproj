@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LevelGenerator.cs" />
      <Compile Include="Assets\PlayerProgress.cs" />
      <Compile Include="Assets\Prefabs\GameManager.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
