@@ -420,12 +420,12 @@ Prefab:
     - target: {fileID: 114547011764687256, guid: c4cf50c0008644cfdabcffd709164291,
         type: 2}
       propertyPath: frequency
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114547011764687256, guid: c4cf50c0008644cfdabcffd709164291,
         type: 2}
       propertyPath: randX
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114547011764687256, guid: c4cf50c0008644cfdabcffd709164291,
         type: 2}
@@ -436,12 +436,12 @@ Prefab:
     - target: {fileID: 114547011764687256, guid: c4cf50c0008644cfdabcffd709164291,
         type: 2}
       propertyPath: percentOfTall
-      value: 0.2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 114547011764687256, guid: c4cf50c0008644cfdabcffd709164291,
         type: 2}
       propertyPath: levelWidth
-      value: 1.5
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4cf50c0008644cfdabcffd709164291, type: 2}

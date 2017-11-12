@@ -32,14 +32,15 @@ public class LevelGenerator : MonoBehaviour {
 			} 
 			Instantiate(tallBlock, tallSpawnPosition, Quaternion.identity);
 			Instantiate(tallBlock, tallSpawnPosition, Quaternion.identity);
-			Instantiate(standardBlock, spawnPosition, Quaternion.identity);
-			spawnBlock(interval);
+			
+			spawnBlock(interval, standardBlock);
 			
 		}
 	}
 
-	void spawnBlock (float interval){
-		Debug.Log(interval);
+	void spawnBlock (float interval, GameObject objectToSpawn){
+
+		Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
 	}
 	
 	// Update is called once per frame
