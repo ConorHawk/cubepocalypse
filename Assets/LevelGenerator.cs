@@ -20,15 +20,15 @@ public class LevelGenerator : MonoBehaviour {
 	void Start () {
 		Vector3 spawnPosition = new Vector3();
 		Vector3 tallSpawnPosition = new Vector3();
-		float levelWidth = level.transform.lossyScale.x;
-
+		float levelWidth = level.GetComponent<Renderer>().bounds.size.x;
+		
 		for (int i = 0; i < numberOfPlatforms; i++)
 		{
 			float interval = i / frequency;
 			float objSelector = Random.Range(0f,1f);
 			spawnPosition.z += Random.Range(interval-randX, interval+randX)*10+startOffset;
 			tallSpawnPosition.z += Random.Range(interval-randX, interval+randX)*10+startOffset;
-			tallSpawnPosition.x = Random.Range(-7, 7);
+			tallSpawnPosition.x = Random.Range(-levelWidth, levelWidth);
 
 			if (objSelector > percentOfTall){
 				spawnBlock(tallSpawnPosition, tallBlock);
