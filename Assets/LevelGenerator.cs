@@ -18,31 +18,33 @@ public class LevelGenerator : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		Vector3 spawnPosition = new Vector3();
-		Vector3 tallSpawnPosition = new Vector3();
-		float levelWidth = level.GetComponent<Renderer>().bounds.size.x;
-		
-		for (int i = 0; i < numberOfPlatforms; i++)
-		{
-			float interval = i / frequency;
-			float objSelector = Random.Range(0f,1f);
-			spawnPosition.z += Random.Range(interval-randX, interval+randX)*10+startOffset;
-			tallSpawnPosition.z += Random.Range(interval-randX, interval+randX)*10+startOffset;
-			tallSpawnPosition.x = Random.Range(-levelWidth, levelWidth);
+		//Vector3 spawnPosition = new Vector3();
+		//Vector3 tallSpawnPosition = new Vector3();
+        //float levelWidth = level.GetComponent<Renderer>().bounds.size.x;
+        //float levelWidth = 7;
 
-			if (objSelector > percentOfTall){
-				spawnBlock(tallSpawnPosition, tallBlock);
-			} 
-			// Instantiate(tallBlock, tallSpawnPosition, Quaternion.identity);
-			// Instantiate(tallBlock, tallSpawnPosition, Quaternion.identity);
-			
-			spawnBlock(spawnPosition, standardBlock);
-		}
-	}
+        //for (int i = 0; i < numberOfPlatforms; i++)
+        //{
+        //    float interval = i / frequency;
+        //    float objSelector = Random.Range(0f, 1f);
+        //    spawnPosition.z += Random.Range(interval - randX, interval + randX) * 10 + startOffset;
+        //    tallSpawnPosition.z += Random.Range(interval - randX, interval + randX) * 10 + startOffset;
+        //    tallSpawnPosition.x = Random.Range(-levelWidth, levelWidth);
 
-	void spawnBlock (Vector3 spawnPosition, GameObject objectToSpawn){
-		Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
-	}
+        //    if (objSelector > percentOfTall)
+        //    {
+        //        spawnBlock(tallSpawnPosition, tallBlock);
+        //    }
+        //    // Instantiate(tallBlock, tallSpawnPosition, Quaternion.identity);
+        //    // Instantiate(tallBlock, tallSpawnPosition, Quaternion.identity);
+
+        //    spawnBlock(spawnPosition, standardBlock);
+        //}
+    }
+
+	//void spawnBlock (Vector3 spawnPosition, GameObject objectToSpawn){
+	//	Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+	//}
 	
 	// Update is called once per frame
 	void Update () {

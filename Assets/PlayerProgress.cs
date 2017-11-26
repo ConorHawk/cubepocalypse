@@ -4,19 +4,19 @@ using UnityEngine.UI;
 public class PlayerProgress : MonoBehaviour
 {
 
-    public Transform player;
-    public Transform goal;
-    public Slider slider;
+    //public Transform player;
+    public Text scoreUi;
+    public Transform playerPos;
 
     void Start()
     {
-        slider.minValue = player.position.z;
-        slider.maxValue = goal.position.z;
+        scoreUi.text = 0.ToString();
     }
     // Update is called once per frame
     void Update()
     {
-        
-        slider.value = player.position.z;
+        scoreUi.text = Mathf.RoundToInt(playerPos.transform.position.z).ToString();
     }
 }
+
+

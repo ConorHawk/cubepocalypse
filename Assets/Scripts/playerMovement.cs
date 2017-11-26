@@ -48,7 +48,7 @@ public class playerMovement : MonoBehaviour {
         {
             if (!inAir)
             {
-                jumpSound.Play();
+                //jumpSound.Play();
                 rb.AddForce(new Vector3(0, jumpHeight, 0), ForceMode.Impulse);
             }
             
@@ -68,7 +68,7 @@ public class playerMovement : MonoBehaviour {
             if (!playerHasFallen)
             {
                 playerHasFallen = true;
-                fall.Play();
+                //fall.Play();
                 FindObjectOfType<GameManager>().EndGame();
             }
             

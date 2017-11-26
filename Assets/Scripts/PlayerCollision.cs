@@ -3,6 +3,9 @@
 public class PlayerCollision : MonoBehaviour {
 
     public playerMovement movement;
+    public float spawnDistance = 50f;
+    public float spawnMin = 0.8f;
+    public float spawnMax = 1.2f;
     public AudioSource hit;
     public AudioSource death;
 
@@ -10,11 +13,18 @@ public class PlayerCollision : MonoBehaviour {
     {
         if (collisionInfo.collider.tag == "Obstacle")
         {
-            hit.Play();
-            death.Play();
+            //hit.Play();
+            //death.Play();
             movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
         }
         
+    }
+
+    private void OnTriggerEnter(Collider triggerObj)
+    {
+        Vector3 PlayerLocation = new Vector3(0,0,transform.position.z);
+        float spawnVariation = spawnDistance * Random.Range(spawnMin, spawnMax);
+        triggerObj.gameObject.transform.parent.gameObject.transform.position = PlayerLocation + Vector3.forward * spawnVariation;
     }
 }
