@@ -272,36 +272,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114517086164326554, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
+    - target: {fileID: 114642128528061854, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
-      propertyPath: player
+      propertyPath: playerPos
       value: 
       objectReference: {fileID: 1253220946}
-    - target: {fileID: 114517086164326554, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
-        type: 2}
-      propertyPath: goal
-      value: 
-      objectReference: {fileID: 1888949205}
-    - target: {fileID: 114423891537121486, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1253220946}
-    - target: {fileID: 114423891537121486, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
-        type: 2}
-      propertyPath: scoreUi
-      value: 
-      objectReference: {fileID: 1717477861}
     - target: {fileID: 114423891537121486, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
         type: 2}
       propertyPath: playerPos
       value: 
       objectReference: {fileID: 1253220946}
-    - target: {fileID: 114806367488950720, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 0.041
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4, type: 2}
   m_IsPrefabParent: 0
@@ -717,6 +697,11 @@ Prefab:
       propertyPath: forwardForce
       value: 15000
       objectReference: {fileID: 0}
+    - target: {fileID: 114278309638344838, guid: 2f95da0deb773e24e9f09b9e67ab9e26,
+        type: 2}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 269185939}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f95da0deb773e24e9f09b9e67ab9e26, type: 2}
   m_IsPrefabParent: 0
@@ -767,12 +752,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1705096750958292, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
     type: 2}
   m_PrefabInternal: {fileID: 124696135}
---- !u!114 &1717477861 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114806367488950720, guid: 6756a7af77b7c6d46bb5ff1c45b04ba4,
-    type: 2}
-  m_PrefabInternal: {fileID: 124696135}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1848528510
 Prefab:
   m_ObjectHideFlags: 0
@@ -838,7 +817,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1888949201
 MonoBehaviour:
   m_ObjectHideFlags: 0
